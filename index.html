@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>😼 MeowQuiz 😼</title>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Comfortaa', cursive;
+    background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+}
+
+.game-container {
+    background: #fff;
+    border-radius: 25px;
+    padding: 30px 40px;
+    width: 500px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+}
+
+#cat {
+    font-family: monospace;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#round-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#question-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#options button {
+    display: block;
+    width: 90%;
+    margin: 8px auto;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #ffb3c1;
+    color: #222;
+    font-weight: bold;
+}
+
+#options button:hover {
+    background: #ff6b81;
+    color: #fff;
+}
+
+#feedback {
+    margin: 15px 0;
+    font-size: 18px;
+    min-height: 24px;
+    font-weight: bold;
+}
+
+#score {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#final {
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ff6b81;
+}
+
+#start-btn {
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    background: #ff6b81;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+#start-btn:hover { background: #ff3b5f; }
+</style>
+</head>
+<body>
+
+<div class="game-container">
+  <div id="cat">
+    /\_/\  
+   ( o.o )  MeowQuiz
+    > ^ <  
+  </div>
+  <div id="round-name"></div>
+  <div id="question-text"></div>
+  <div id="options" style="display:none;">
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+  </div>
+  <div id="feedback"></div>
+  <div id="score"></div>
+  <div id="final"></div>
+
+  <!-- Start Button -->
+  <div id="intro">
+    <p>Hi! Welcome to MeowQuiz </p>
+    <p>Made by Erica</p>
+    <button id="start-btn">Start Quiz</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
